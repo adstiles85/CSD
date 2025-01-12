@@ -1,0 +1,6 @@
+[submodule "CSD-310"]
+	path = CSD-310
+	url = https://github.com/adstiles85/CSD-310.git
+[submodule "CSD-325"]
+	path = CSD-325
+	url = https://github.com/adstiles85/CSD-325.git
