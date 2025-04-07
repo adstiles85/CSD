@@ -1,0 +1,27 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Unified styling for all heading levels */
+h1, h2, h3, h4 {
+    background-color: #A63F2A;  /* Pick your own color if you'd like */
+    color: #ffffff;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* Anchor styling */
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;  /* Change this to fit your scheme */
+}
+
+a:visited {
+    color: #D6A800;  /* Change this to fit your scheme */
+}
