@@ -1,0 +1,54 @@
+/*
+ *
+ * Professor Darrell Payne
+ * Bellevue University
+ *
+ *  Style class
+ *
+ *  JavaFX style sheets define Style Classes and Style IDs
+ *  Multiple Style Classes may be applied to a single node
+ *  A Style ID can be applied to a unique node
+ *
+ *  Each node in JavaFX has a styleClass variable of type List<String>
+ *    Remember, a node can have multiple style classes
+ *    And a node can only have a single style ID
+ *  Style Class - multible
+ *  Style ID - only one
+ *
+ * Lastly, the Scene and Parent class have stylesheets property
+ *   which can be obtained invoking the getStylesheets() method
+ *
+ * This is an example from our text.
+ */
+.plaincircle{
+  -fx-fill:blue;
+  -fx-stroke:black;
+}
+/*
+ *  Style class
+ */
+.circleborder{
+  -fx-stroke-width: 5;
+  -fx-stroke-dash-array: 12 2 4 2;
+}
+/*
+ *  Style class
+ */
+.border{
+  -fx-border-color: orange;
+  -fx-border-width: 5;
+}
+/*
+ * Style ID
+ */
+#redcircle{
+  -fx-fill: black;
+  -fx-stroke :red;
+}
+/*
+ * Style ID
+ */
+#greencircle{
+  -fx-fill: green;
+  -fx-stroke: green;
+}
