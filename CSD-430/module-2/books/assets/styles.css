@@ -1,0 +1,92 @@
+/* 
+    Name: Andrew Stiles
+    Class: CSD-430 Server Side Development
+    Assignment: Module 2 – Java Scriptlet Data Display
+    Date: 8/31/2025
+    File: styles.css
+    Explanation: This stylesheet provides external styling for books.jsp.
+                 It controls layout, colors, table formatting, and
+                 improves readability by grouping rows and adding
+                 consistent page structure.
+*/
+
+/* Intention: basic, clean styling for readability and a simple grouped table */
+
+:root {
+  --ink: #111;
+  --muted: #555;
+  --accent: #0b6efd;
+  --bg: #fafafa;
+  --stripe: #f2f6ff;
+  --group: #e7efff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.45;
+}
+
+header, footer, section {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 16px 0 4px;
+  font-size: 28px;
+}
+.subtitle { color: var(--muted); margin: 0 0 16px; }
+
+.desc h2, .table-wrap h2 {
+  margin: 8px 0 8px;
+  font-size: 22px;
+}
+
+ul { margin: 8px 0 16px 18px; }
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+thead th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) { background: var(--stripe); }
+
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.nowrap { white-space: nowrap; }
+
+.group-row td.group-cell {
+  background: var(--group);
+  font-weight: 700;
+  letter-spacing: .2px;
+  border-bottom: 2px solid #cfe2ff;
+}
+
+tfoot td.foot-note {
+  padding: 12px;
+  font-size: 14px;
+  color: var(--muted);
+  background: #fff;
+}
+footer { color: var(--muted); font-size: 14px; margin-top: 24px; }
