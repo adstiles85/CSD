@@ -1,0 +1,26 @@
+/* 
+Name: Andy Stiles
+Class: CSD-430 Server Side Development
+Assignment: M4 – JavaBean
+Date: 9/8/2025
+File: styles.css
+Explanation: Basic, clean styling for the JavaBean display table and page layout.
+*/
+
+/* Intention: base tokens and resets */
+:root { --ink:#111; --muted:#555; --bg:#fafafa; --accent:#0b6efd; --stripe:#f6f9ff; --group:#e7efff; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45}
+header,footer,section{max-width:900px;margin:24px auto;padding:0 16px}
+h1{margin:16px 0 4px;font-size:28px}
+.subtitle{color:var(--muted);margin:0 0 16px}
+ul{margin:8px 0 16px 18px}
+
+/* Table */
+.table-wrap table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ddd;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+thead th{padding:10px 12px;border-bottom:2px solid #ddd;text-align:left}
+td{padding:10px 12px;border-bottom:1px solid #eee;vertical-align:top}
+tbody tr:nth-child(even){background:var(--stripe)}
+.nowrap{white-space:nowrap}
+.group-row td.group-cell{background:var(--group);font-weight:700;border-bottom:2px solid #cfe2ff}
+tfoot td.foot-note{padding:12px;color:var(--muted);background:#fff}
