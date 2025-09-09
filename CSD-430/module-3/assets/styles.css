@@ -1,0 +1,55 @@
+/* 
+Name: Andy Stiles
+Class: CSD-430 Server Side Development
+Assignment: M3 – Working with JSP Forms
+Date: 9/8/2025
+File: styles.css
+Explanation: Shared styling for form and result pages; readable layout, 
+buttons, and table formatting.
+*/
+
+
+/* Intention: base tokens and resets */
+:root {
+  --ink:#111; --muted:#555; --bg:#fafafa; --accent:#0b6efd; --stripe:#f6f9ff; --group:#e7efff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45}
+
+header,footer,section{max-width:900px;margin:24px auto;padding:0 16px}
+h1{margin:16px 0 4px;font-size:28px}
+.subtitle{color:var(--muted);margin:0 0 16px}
+
+/* Intention: form card */
+.card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:12px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:600}
+input,select,textarea{font:inherit;padding:8px;border:1px solid #ccc;border-radius:6px}
+fieldset{border:1px solid #ddd;border-radius:8px;padding:10px 12px;margin:8px 0}
+legend{font-weight:700}
+.inline{margin:8px 0;display:flex;align-items:center;gap:8px;font-weight:600}
+.actions{display:flex;gap:8px;margin-top:8px}
+button,.button{padding:8px 14px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;text-decoration:none}
+.secondary{background:#fff;color:var(--accent)}
+button:hover,.button:hover{filter:brightness(0.95)}
+
+/* Intention: table look */
+.table-wrap table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ddd;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+th,td{padding:10px 12px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
+tbody tr:nth-child(even){background:var(--stripe)}
+tfoot td.foot-note{padding:12px;color:var(--muted);background:#fff}
+
+/* Make radio buttons and labels line up neatly */
+.radio-group {
+  display: flex;
+  gap: 16px;        /* space between options */
+  align-items: center;
+  margin-top: 6px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 4px;         /* space between circle and number */
+  font-weight: normal;
+}
