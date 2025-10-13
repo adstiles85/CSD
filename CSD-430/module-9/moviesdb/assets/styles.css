@@ -1,0 +1,97 @@
+/* 
+Name: Andy Stiles
+Class: CSD-430 Server Side Development
+Assignment: Shared Styles
+Date: 10/12/2025
+File: styles.css
+Purpose: Shared styling for all JSPs. Adds centered content wrap for index.jsp without
+affecting existing page layouts.
+*/
+
+/* Base tokens */
+:root {
+  --ink: #111;
+  --muted: #555;
+  --bg: #fafafa;
+  --accent: #0b6efd;
+  --stripe: #f5f8ff;
+  --group: #e8f0ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+  line-height: 1.5;
+}
+
+/* Generic page sections (used by most assignment pages) */
+header, footer, section {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+h1 { margin: 16px 0 8px; font-size: 28px; }
+.subtitle { color: var(--muted); margin: 0 0 16px; }
+h2 { font-size: 22px; margin-top: 20px; }
+
+/* Table styling (used by read/update/delete pages) */
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+thead th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #ddd;
+  background-color: var(--group);
+}
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+tbody tr:nth-child(even) { background: var(--stripe); }
+tfoot td {
+  padding: 12px;
+  background-color: #fff;
+  font-size: 14px;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* Links and buttons */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.button {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.button:hover { filter: brightness(0.95); }
+
+/* Footer */
+footer { color: var(--muted); font-size: 14px; margin-top: 30px; text-align: center; }
+
+/* ---------- Index page only ---------- */
+/* This wrapper centers and pads the index content without touching other pages */
+body.index-page main {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 32px;
+}
+
