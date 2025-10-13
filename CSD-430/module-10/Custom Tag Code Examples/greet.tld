@@ -1,0 +1,10 @@
+<!-- greet.tld -->
+<tag>
+  <name>greet</name>
+  <tag-class>mytags.GreetingTag</tag-class>
+  <body-content>empty</body-content>
+  <attribute>
+    <name>user</name>
+    <required>true</required>
+  </attribute>
+</tag>
